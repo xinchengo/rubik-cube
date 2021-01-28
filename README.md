@@ -1,1 +1,2 @@
-# rubik-cube-emulator
+# Rubik Cube Utilities
+The *Rubik Cube Utilties* is a simple C++ library which provides users with a interface that emulates the rotation of a Rubik's cube. It also contains a function which can tell user whether the cube is repaired or not. The library was written in an optimized way, which stores the state of a Rubik's cube by storing its colors appear on each face as they appear in the real world, rotate a rubik cube by recording its changes on a buffer and updating it after the operation.

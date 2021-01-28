@@ -1,5 +1,5 @@
 #include <iostream>
-#include "rubik.h"
+#include "../include/rubik.h"
 using namespace std;
 int main()
 {
@@ -7,8 +7,10 @@ int main()
     int cnt = 0;
     do
     {
-        cube1.rotate(FACE_UP, 3);
         cube1.rotate(FACE_RIGHT);
+        cube1.rotate(FACE_UP);
+        cube1.rotate(FACE_LEFT);
+        cube1.rotate(FACE_DOWN);
         cnt++;
     } while (!cube1.solved());
     cout << cnt << endl;
