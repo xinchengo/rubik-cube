@@ -85,7 +85,7 @@ void __rubik_face::update()
             face[i][j] = (__face[i][j] == FACE_UNSET) ? face[i][j] : __face[i][j];
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
-            __face[i][j] == FACE_UNSET;
+            __face[i][j] = FACE_UNSET;
 }
 int copy(__rubik_face &source, __rubik_face &target, int smode, int tmode)
 {
